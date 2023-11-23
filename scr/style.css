@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  color: #303030;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table,
+ul,
+input {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #4b6584;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+h5 {
+  font-size: 1.4rem;
+}
+p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+input {
+  font-size: 1.6rem;
+  color: #303030;
+}
+
+button {
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}
+.header {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+.border {
+  width: 50%;
+  border-bottom: 2px solid #303030;
+  border-style: dotted;
+  margin: 1rem auto 0 auto;
+}
+
+table {
+  width: 70%;
+  background: #efefef;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+table,
+th,
+td {
+  border: 3px solid #3030302a;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 0.8rem 2rem;
+}
+
+select {
+  width: 100%;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #303030;
+  /* font-weight: bold; */
+  padding: 0.5rem 2rem;
+  border: 2px solid #3030302c;
+  border-radius: 5px;
+}
+
+select:focus {
+  outline: 1px solid rgb(0, 106, 255);
+}
+
+.sub-name {
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  border: none;
+}
+
+.sub-name:focus {
+  outline: none;
+}
+
+#cgpa {
+  font-size: 2rem;
+}
+#Submit {
+  margin-top: 1.5rem;
+}
+#Submit,
+#add {
+  border: 1px solid transparent;
+  background: black;
+  padding: 0.6rem 1.5rem;
+  color: white;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+
+#Submit:hover,
+#add:hover {
+  background: transparent;
+  border: 1px solid #303030;
+  color: #303030;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+#name {
+  padding: 0.5rem 1rem;
+  border: 1px solid #30303050;
+  margin-left: 1rem;
+}
+
+.add {
+  margin-top: 0.8rem;
+}
+
+.calculate,
+.result,
+.add {
+  text-align: center;
+  margin-top: 0.8rem;
+}
+
+.delete {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  background: #f6141b;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.delete:hover {
+  background: none;
+  border: 1px solid #303030;
+  color: #303030;
+}
+.grade-point-table {
+  margin-top: 2rem;
+}
+
+.grade-point-table h1 {
+  text-align: center;
+}
+
+.img {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}
+/* #high-light {
+  color: red !important;
+} */
+.total-cgpa {
+  color: green;
+}
+img {
+  width: 60%;
+}
+
+.footer {
+  padding: 1rem 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+  table {
+    width: 100%;
+  }
+
+  .border {
+    width: 80%;
+  }
+  img {
+    width: 85%;
+  }
+
+  #Submit,
+  #add {
+    font-size: 1.9rem;
+    padding: 0.7rem 2rem;
+  }
+}
+@media only screen and (max-width: 510px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  table tr td {
+    display: block;
+  }
+  table tr th {
+    display: none;
+  }
+
+  table {
+    width: 75%;
+  }
+
+  .border {
+    width: 90%;
+  }
+
+  select {
+    width: 45%;
+  }
+  img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 310px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+  select {
+    width: 50%;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  html,
+  body {
+    font-size: 50%;
+  }
+  table {
+    width: 85%;
+  }
+  .border {
+    width: 65%;
+  }
+
+  #Submit,
+  #add {
+    font-size: 1.9rem;
+    padding: 0.7rem 2rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 55%;
+  }
+  table {
+    width: 75%;
+  }
+  .border {
+    width: 60%;
+  }
+
+  #Submit,
+  #add {
+    font-size: 1.8rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  html,
+  body {
+    font-size: 60%;
+  }
+  table {
+    width: 70%;
+  }
+
+  .border {
+    width: 50%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  html,
+  body {
+    font-size: 62.5%;
+  }
+  #Submit,
+  #add {
+    font-size: 1.7rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width: 1400px) {
+  table {
+    width: 80%;
+  }
+}
